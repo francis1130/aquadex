@@ -1,13 +1,12 @@
-import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
-import HomeScreen from './screens/HomeScreen';
-import AddFishScreen from './screens/AddFishScreen';
-import FishDetailsScreen from './screens/FishDetailsScreen';
+import HomeScreen from '../screens/HomeScreen';
+import AddFishScreen from '../screens/AddFishScreen';
+import FishDetailsScreen from '../screens/FishDetailsScreen';
 
 const Stack = createStackNavigator();
 
-export default function App() {
+export default function AppNavigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerStyle: { backgroundColor: '#0077b6' }, headerTintColor: '#fff' }}>
